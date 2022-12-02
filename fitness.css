@@ -1,0 +1,493 @@
+@import url('https://fonts.googleapis.com/css2?family=Kanit&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200");
+
+:root{
+    --font:'Kanit' , sans-serif;
+}
+
+html,body{
+    max-width: 100%;
+    overflow-x: hidden;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    /* background-color: black; */
+}
+
+header{
+    background: black;
+    font-family: var(--font);
+}
+
+nav{
+    position: static;
+    width: 100vw;
+    height: 65px;
+    border-top: .4rem solid orangered;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: black;
+}
+
+.logo{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 60px;
+    width: 14%;
+    font-weight: 800;
+    background: orangered;
+}
+
+.logo::before{
+    content: "Fitness";
+    letter-spacing: 2px;
+    color: wheat;
+}
+
+.logo::after{
+    content: "Freaks";
+    letter-spacing: 2px;
+    color: black;
+}
+
+ul a{
+    text-decoration: none;
+    color: whitesmoke;
+    margin: 0 2rem;
+    text-transform: uppercase;
+    font-family: var(--font);
+    font-weight: 500;
+    font-size: 17px;
+}
+
+ul a:first-child{
+    text-decoration: 5px underline orangered;
+}
+
+ul{
+    display: flex;
+    align-items: center;
+    height: 65px;
+}
+
+ul li{
+    list-style: none;
+}
+
+nav ul li:hover{
+    color: orangered;
+    font-size: 21px;
+    transition: .5s;
+}
+
+.info{
+    background: url(banner1.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: scroll;
+    height: 100vh;
+}
+
+.btn{
+    padding: 0.4rem 1.5rem;
+    font-family: var(--font);
+    text-transform: capitalize;
+    background: orangered;
+    color: aliceblue;
+    border-radius: 30px;
+    font-size: 18px;
+    text-decoration: none;
+    outline: none;
+    border: 2px solid orangered;
+    cursor: pointer;
+}
+
+.btn:hover{
+    background-color: transparent;
+    color: orangered;
+    outline: none;
+    padding: 0.41rem 1.51rem;
+    transition: .5s;
+}
+
+.right{
+    position: relative;
+    top: 28%;
+    left: 65%;
+    color: wheat;
+    width: 300px;
+    font-size: 24px;
+}
+
+.info .btn{
+    margin-top: 1.5rem;
+}
+
+.right h2{
+    font-size: 50px;
+    font-weight: 800;
+    color: orangered;
+    text-transform: uppercase;
+    width: 700px;
+}
+
+.right p{
+    display: flex;
+    color: whitesmoke; 
+    font-weight: 400;
+    font-size: 24px; 
+}
+
+.right h2:hover{
+    text-decoration: 3px underline;
+    font-size: 65px;
+    transition: .7s;
+}
+
+.right p:hover{
+    font-size: 30px;
+    transition: .6s;
+}
+
+.row{
+    display: flex;
+    justify-content: center;
+    align-content: center;
+}
+
+.Progression{
+    width: 33.3%;
+    height: 270px;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    padding: 3%;
+}
+
+.Progression h2{
+    text-transform: uppercase;
+    color: rgb(188, 74, 74);
+    font-weight: bolder;
+}
+
+.Progression h2:hover{
+    font-size: 35px;
+    text-decoration: underline;
+    transition: .4s;
+}
+
+.Progression p{
+    color: rgb(140, 91, 1);
+    font-size: 18px;
+}
+
+.cbtn1{
+    border-radius: 10px;
+    font-size: 15px;
+    padding: 3px;
+    outline: none;
+    cursor: pointer;
+    border: 2px solid transparent;
+    background-color: rgb(201, 192, 194);
+    font-weight: 600;
+    border: ridge;
+}
+
+.cbtn2{
+    border-radius: 10px;
+    font-size: 15px;
+    padding: 3px;
+    outline: none;
+    border: 2px solid transparent;
+    background-color: rgb(201, 192, 194);
+    font-weight: 600;
+    border: ridge;
+}
+
+.cbtn3{
+    border-radius: 10px;
+    font-size: 15px;
+    padding: 3px;
+    outline: none;
+    cursor: pointer;
+    background-color: rgb(201, 192, 194);
+    font-weight: 600;
+    border: ridge;
+}
+
+.cbtn1:hover{
+    background-color: white;
+    transition: .3s;
+    font-size: 16px;
+}
+.cbtn2:hover{
+    background-color: white;
+    transition: .3s;
+    font-size: 16px;
+}
+.cbtn3:hover{
+    background-color: white;
+    transition: .3s;
+    font-size: 16px;
+}
+
+#services{
+    background-color: black;
+    padding: 50px 0px;
+    align-items: center;
+}
+
+.services-info{
+    text-align: center;
+}
+
+.services-info h1{
+    font-size: 50px;
+}
+
+.services-info h1:hover{
+    font-size: 56px;
+    transition: .5s;
+}
+
+.services-box h2{
+    font-size: 25px;
+}
+
+.services-box h2:hover{
+    font-size: 26px;
+    color: orangered;
+    text-decoration: underline;
+    transition: .7s;
+}
+
+.services-info p{
+    font-size: 28px;
+    font-weight: 590;
+}
+
+.services-row{
+    align-items: center;
+    display: grid;
+    grid-template-columns: 220px 220px 220px;
+    grid-auto-rows: minmax(150px,auto);
+    grid-gap : 5ex;
+    padding-left: 25%;
+}
+
+.services-box{
+    box-shadow: 8px 5px 5px grey;
+    padding: 10px;
+    color: whitesmoke;
+}
+
+#blue{
+    color:orangered ;
+}
+
+#black{
+    color: wheat;
+}
+
+.footer{
+    display: flex;
+    flex-flow: row wrap;
+}
+
+.buy1{
+    width: 33.33%;
+    height: 420px;
+    text-align: center;
+    background: black;
+    color: orangered;
+    font-size: 30px;
+}
+
+.buy1 span{
+    font-size: 15px;
+    color: white;
+}
+
+.buy1 p{
+    color: orangered;
+}
+
+.buy1 ul{
+    display: block;
+}
+.buy1 li{
+    font-size: 16px;
+    padding: 10px 5px;
+    text-align: center;
+}
+
+.buy1 img{
+    height:66px;
+    width:66px;
+}
+
+.buy2{
+    width: 33.33%;
+    height: 420px;
+    text-align: center;
+    background: black;
+    color: orangered;
+    font-size: 30px;
+}
+
+.buy2 span{
+    font-size: 15px;
+    color: white;
+}
+
+.buy2 p{
+    color: orangered;
+}
+
+.buy2 ul{
+    display: block;
+}
+.buy2 li{
+    font-size: 16px;
+    padding: 10px 5px;
+    text-align: center;
+}
+
+.buy2 img{
+    height:66px;
+    width:66px;
+}
+
+.buy3{
+    width: 33.34%;
+    height: 420px;
+    text-align: center;
+    background: black;
+    color: orangered;
+    font-size: 30px;
+}
+
+.buy3 span{
+    font-size: 15px;
+    color: white;
+}
+
+.buy3 p{
+    color: orangered;
+}
+
+.buy3 ul{
+    display: block;
+}
+.buy3 li{
+    font-size: 16px;
+    padding: 10px 5px;
+    text-align: center;
+}
+
+.buy3 img{
+    height:66px;
+    width:66px;
+}
+
+.cbtn4{
+    border-radius: 10px;
+    font-size: 15px;
+    padding: 4px;
+    font-weight: 600;
+    border: 2px solid orangered;
+    background-color: orangered;
+    color: white;
+}
+
+.cbtn4:hover{
+    background-color: black;
+    color: orangered;
+    padding: 5px;
+    transition: .6s;
+}
+
+.end{
+    background-color: orangered;
+    width: 100%;
+    height: 500px;
+}
+
+.end h1{
+    margin-top: 0px;
+    padding-top: 187px;
+    text-align: center;
+    font-size: 80px;
+    
+}
+
+.end li{
+    padding: 0px 20px;
+    
+}
+
+.end ul{
+    justify-content: center;
+    font-weight: 600;
+    font-size: 32px;
+}
+.end h1:hover{
+    transform: translateY(-50px);
+    font-size: 85px;
+    text-decoration: line-through 6px orangered;
+    font-family: cursive;
+    cursor: col-resize;
+    transition: .99s;
+    
+}
+
+.end li:hover{
+    transform: translateY(3px);
+    border: 3px solid orangered;
+    border-radius: 30px;
+    background-color: black;
+    color: orangered;
+    /* transition: .2s; */
+    text-transform: uppercase;
+    font-style: italic;
+}
+
+.footer2{
+    font-size: 20px;
+    /* text-align: center; */
+    width: 100%;
+    height: 1000px;
+    background-color: black;
+    color: orangered;
+}
+
+.footer2 ul{
+    padding-top: 100px;
+    padding-left: 200px;
+    display: block;
+}
+
+.footer2 li{
+    padding: 7px 10px;
+    font-size: 30px;
+}
+
+.footer2 span{
+    color: white;
+}
+
+.footer2 h3{
+    font-size: 45px;
+}
+
+.footer2 img{
+    height: 30px;
+    align-items: baseline;
+}
